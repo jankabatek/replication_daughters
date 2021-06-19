@@ -1,0 +1,13 @@
+----------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+----------------------------------------------------------------------------------------------------------------
+nomem_encr      double  %10.0g                id
+doetmee         double  %10.0g     doetmee    individuals participated
+filled_f        float   %9.0g                 individuals filled in the family module
+BIO1            float   %9.0g                 individuals share bio. children
+C18IDF          float   %9.0g                 individuals share 0-18yr old bio. children
+BIOFBTH_MAR     float   %9.0g                 married individuals living w/ 1st born bio. teenager
+BIOFBC18H       float   %9.0g                 individuals living w/ 1st born bio. child less than 18
+BIOFBC18H_MAR   float   %9.0g                 married individuals living w/ 1st born bio. child less than 18
+----------------------------------------------------------------------------------------------------------------

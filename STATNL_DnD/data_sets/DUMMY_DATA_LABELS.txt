@@ -1,0 +1,87 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rinpersoon1     float   %9.0g                 Hashed ID, father
+rinpersoon2     float   %9.0g                 Hashed ID, mother
+event2          byte    %9.0g                 Divorce indicator
+GEN1            byte    %9.0g                 Immigration background, father
+GEN2            byte    %9.0g                 Immigration background, mother
+EDU1            byte    %9.0g                 Education attainment, father
+EDU2            byte    %9.0g                 Education attainment, mother
+YOB1            int     %9.0g                 Year of birth, father
+YOB2            int     %9.0g                 Year of birth, mother
+MHLdist         float   %9.0g                 Mahalanobis distance between parental characteristics
+girl_sib        byte    %9.0g                 Number of female siblings of a parent (auxiliary var.)
+boy_sib         byte    %9.0g                 Number of male siblings of a parent (auxiliary var.)
+age_aw_1        byte    %9.0g                 Age at wedding, father
+age_aw_2        byte    %9.0g                 Age at wedding, mother
+RP              byte    %9.0g                 Registered partnership dummy
+TM_Y            byte    %10.0g                Marriage duration, in years
+YR              int     %9.0g                 Calendar year
+AGE_K_Y1        int     %9.0g                 Age of Child 1
+AGE_K_Y2        byte    %9.0g                 Age of Child 2
+AGE_K_Y3        byte    %9.0g                 Age of Child 3
+AGE_K_Y4        byte    %9.0g                 Age of Child 4
+AGE_K_Y5        byte    %9.0g                 Age of Child 5
+daughter1       byte    %9.0g                 Firstborn child is a daughter
+PREMAR          byte    %9.0g                 Firstborn child born before marriage
+iAGE_K_Y_0      byte    %8.0g                 number of higher-order children aged 0
+iAGE_K_Y_1      byte    %8.0g                 number of higher-order children aged 1
+iAGE_K_Y_2      byte    %8.0g                 number of higher-order children aged 2
+iAGE_K_Y_3      byte    %8.0g                 number of higher-order children aged 3
+iAGE_K_Y_4      byte    %8.0g                 number of higher-order children aged 4
+iAGE_K_Y_5      byte    %8.0g                 number of higher-order children aged 5
+iAGE_K_Y_6      byte    %8.0g                 number of higher-order children aged 6
+iAGE_K_Y_7      byte    %8.0g                 number of higher-order children aged 7
+iAGE_K_Y_8      byte    %8.0g                 number of higher-order children aged 8
+iAGE_K_Y_9      byte    %8.0g                 number of higher-order children aged 9
+iAGE_K_Y_10     byte    %8.0g                 number of higher-order children aged 10
+iAGE_K_Y_11     byte    %8.0g                 number of higher-order children aged 11
+iAGE_K_Y_12     byte    %8.0g                 number of higher-order children aged 12
+iAGE_K_Y_13     byte    %8.0g                 number of higher-order children aged 13
+iAGE_K_Y_14     byte    %8.0g                 number of higher-order children aged 14
+iAGE_K_Y_15     byte    %8.0g                 number of higher-order children aged 15
+iAGE_K_Y_16     byte    %8.0g                 number of higher-order children aged 16
+iAGE_K_Y_17     byte    %8.0g                 number of higher-order children aged 17
+iAGE_K_Y_18     byte    %8.0g                 number of higher-order children aged 18
+iAGE_K_Y_19     byte    %8.0g                 number of higher-order children aged 19
+iAGE_K_Y_20     byte    %8.0g                 number of higher-order children aged 20
+iAGE_K_Y_21     byte    %8.0g                 number of higher-order children aged 21
+iAGE_K_Y_22     byte    %8.0g                 number of higher-order children aged 22
+iAGE_K_Y_23     byte    %8.0g                 number of higher-order children aged 23
+iAGE_K_Y_24     byte    %8.0g                 number of higher-order children aged 24
+iAGE_K_Y_25     byte    %8.0g                 number of higher-order children aged 25
+iAGE_K_Y_26     byte    %8.0g                 number of higher-order children aged 26
+iAGE_K_Y_27     byte    %8.0g                 number of higher-order children aged 27
+iD_AGE_K_Y_0    byte    %8.0g                 number of higher-order daughters aged 0
+iD_AGE_K_Y_1    byte    %8.0g                 number of higher-order daughters aged 1
+iD_AGE_K_Y_2    byte    %8.0g                 number of higher-order daughters aged 2
+iD_AGE_K_Y_3    byte    %8.0g                 number of higher-order daughters aged 3
+iD_AGE_K_Y_4    byte    %8.0g                 number of higher-order daughters aged 4
+iD_AGE_K_Y_5    byte    %8.0g                 number of higher-order daughters aged 5
+iD_AGE_K_Y_6    byte    %8.0g                 number of higher-order daughters aged 6
+iD_AGE_K_Y_7    byte    %8.0g                 number of higher-order daughters aged 7
+iD_AGE_K_Y_8    byte    %8.0g                 number of higher-order daughters aged 8
+iD_AGE_K_Y_9    byte    %8.0g                 number of higher-order daughters aged 9
+iD_AGE_K_Y_10   byte    %8.0g                 number of higher-order daughters aged 10
+iD_AGE_K_Y_11   byte    %8.0g                 number of higher-order daughters aged 11
+iD_AGE_K_Y_12   byte    %8.0g                 number of higher-order daughters aged 12
+iD_AGE_K_Y_13   byte    %8.0g                 number of higher-order daughters aged 13
+iD_AGE_K_Y_14   byte    %8.0g                 number of higher-order daughters aged 14
+iD_AGE_K_Y_15   byte    %8.0g                 number of higher-order daughters aged 15
+iD_AGE_K_Y_16   byte    %8.0g                 number of higher-order daughters aged 16
+iD_AGE_K_Y_17   byte    %8.0g                 number of higher-order daughters aged 17
+iD_AGE_K_Y_18   byte    %8.0g                 number of higher-order daughters aged 18
+iD_AGE_K_Y_19   byte    %8.0g                 number of higher-order daughters aged 19
+iD_AGE_K_Y_20   byte    %8.0g                 number of higher-order daughters aged 20
+iD_AGE_K_Y_21   byte    %8.0g                 number of higher-order daughters aged 21
+iD_AGE_K_Y_22   byte    %8.0g                 number of higher-order daughters aged 22
+iD_AGE_K_Y_23   byte    %8.0g                 number of higher-order daughters aged 23
+iD_AGE_K_Y_24   byte    %8.0g                 number of higher-order daughters aged 24
+iD_AGE_K_Y_25   byte    %8.0g                 number of higher-order daughters aged 25
+iD_AGE_K_Y_26   byte    %8.0g                 number of higher-order daughters aged 26
+iD_AGE_K_Y_27   byte    %8.0g                 number of higher-order daughters aged 27
+i_nobrother     byte    %8.0g                 Dummy for no male child in the family
+i_anybrother    byte    %8.0g                 Dummy for any male child in the family
+count           byte    %9.0g                 Auxiliary count variable

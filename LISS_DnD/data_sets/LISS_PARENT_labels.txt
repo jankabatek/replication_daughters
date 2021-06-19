@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+year            int     %9.0g                 Survey year
+f180            int     %10.0g     cf17j180   How satisfied are you with your current relationship?
+f182            byte    %10.0g     cf17j182   Can you indicate whether you and your partner had any differences of opinion reg
+f183            byte    %10.0g     cf17j183   Can you indicate whether you and your partner had any differences of opinion reg
+f427            byte    %10.0g     cf13f427   All in all, caring for my child is not such a burden.
+f432            byte    %10.0g     cf17j432   How would you generally describe the relationship with your family?
+p011            int     %10.0g     cp17i011   How satisfied are you with the life you lead at the moment?
+v124            byte    %10.0g     cv18j124   Married people are generally happier than unmarried people.
+v129            byte    %10.0g     cv18j129   A divorce is generally the best solution if a married couple cannot solve their
+v151            byte    %10.0g     cv18j151   A woman is more suited to rearing young children than a man.
+b013            int     %10.0g                How much time did you spend in the last seven days on: activities with own child
+b014            byte    %10.0g                How much time did you spend in the last seven days on: activities with own child
+b135            int     %10.0g                Please indicate how many euros your household spends on average per month on per
+b114            int     %10.0g                Total expenditure per month for children living at home based on variables bf12c
+age_m           byte    %9.0g                 Age, father
+age_w           byte    %9.0g                 Age, mother
+edu_m           byte    %9.0g                 Education attainment, father
+edu_w           byte    %9.0g                 Education attainment, mother
+gen_m           byte    %9.0g                 Immigration background, father
+gen_w           byte    %9.0g                 Immigration background, mother
+mom             byte    %9.0g                 Respondent is the mother, dummy (0=father)
+DGH012          byte    %9.0g                 Firstborn girl is aged 0-12, dummy
+PUB             byte    %9.0g                 Firstborn is a teenager, dummy
+DPUB            byte    %9.0g                 Firstborn girl is a teenager, dummy
+NSIB018H        byte    %9.0g                 Number of chlidren (excl. the firstborn)
+NSIB018DH       byte    %9.0g                 Number of daughters (excl. the firstborn)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

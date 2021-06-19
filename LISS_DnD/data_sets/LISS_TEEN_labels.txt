@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+year            int     %9.0g                 Survey year
+f024            byte    %10.0g     cf17j024   Do you currently have a partner?
+f161            byte    %10.0g     cf17j161   How would you describe your overall relationship with your mother?
+f162            byte    %10.0g     cf17j162   How would you describe your overall relationship with your father?
+h125            byte    %10.0g     ch16i125   Have you ever smoked?
+h126            byte    %10.0g     ch16i126   Do you smoke now?
+h133            byte    %10.0g     ch16i133   How often did you have a drink containing alcohol over the last 12 months?
+h134            byte    %10.0g     ch16i134   Did you have a drink containing alcohol during the last seven days (excluding to
+age_m           float   %9.0g                 Age, father
+age_w           float   %9.0g                 Age, mother
+edu_m           float   %9.0g                 Education attainment, father
+edu_w           float   %9.0g                 Education attainment, mother
+gen_m           float   %9.0g                 Immigration background, father
+gen_w           float   %9.0g                 Immigration background, mother
+NSIB018H        float   %9.0g                 Number of siblings
+NSIB018DH       float   %9.0g                 Number of sisters
+FB              float   %9.0g                 Firstborn dummy
+girl            float   %9.0g                 Own gender
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

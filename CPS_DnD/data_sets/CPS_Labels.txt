@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+----------------------------------------------------------------------------------------------------------------
+pemaritl        byte    %24.0g     pemaritl   marital status
+pesa1           byte    %15.0g     pesa1l     How many live births, if any,
+fmstm1900       int     %9.0g                 first marriage: date started (in months)
+fmagem          int     %9.0g                 age at the time of first wedding (in months)
+yofm            byte    %9.0g                 first marriage: year of wedding
+fbm1900         int     %9.0g                 firstborn: birthdate (in months)
+yofb            byte    %9.0g                 year of first birth
+fb_girl         byte    %9.0g                 firstborn is a girl
+fmendm1900      int     %9.0g                 first marriage: date ended (in months)
+yofd            byte    %9.0g                 year of divorce
+fmdiv           byte    %9.0g                 first marriage: divorced
+fmdivsep        byte    %9.0g                 first marriage: divorced/separated
+fmwid           byte    %9.0g                 first marriage: widowed
+cpsyear         int     %9.0g                 survey year
+iid             float   %9.0g                 id
+a_age           byte    %9.0g                 age
+a_sex           byte    %9.0g                 sex
+bdm1900         int     %9.0g                 date of own birth (in months)
+yob             byte    %9.0g                 year of birth
+black           byte    %9.0g                 race: black
+orace           byte    %9.0g                 race: other
+cdiv            byte    %9.0g                 census division (geography)
+coll            byte    %9.0g                 education: college
+hs              byte    %9.0g                 education: high school
+a_fnlwgt        float   %9.0g                 weight
+----------------------------------------------------------------------------------------------------------------
