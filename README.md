@@ -17,13 +17,13 @@ The package contains a **synthetic dataset** that illustrates the workings of th
 
 To execute the code with proprietary STATNL data, make sure that you have access to the following datasets: 
 
-    ADOPTIEKINDEREN                            
-    BAANSOMMENTAB                              
-    GBAHUISHOUDENSBUS                          
-    GBAPERSOONTAB (x)                          
-    GBAVERBINTENISPARTNERBUS (x)               
-    HOOGSTEOPLTAB                              
-    KINDOUDERTAB (x)                           
+      ADOPTIEKINDEREN                            
+      BAANSOMMENTAB                              
+      GBAHUISHOUDENSBUS                          
+      GBAPERSOONTAB (x)                          
+      GBAVERBINTENISPARTNERBUS (x)               
+      HOOGSTEOPLTAB                              
+      KINDOUDERTAB (x)                           
 
 The datasets marked with (x) are essential. The other datasets add valuable information, however the code can be adjusted to run without them. Inquiries regarding the STATNL data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl)
 
