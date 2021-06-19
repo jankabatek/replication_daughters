@@ -1,4 +1,4 @@
-# Replication code for [Kabatek & Ribar (2021)](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaa140/6055681)
+# Replication code for [Kabátek & Ribar (2021)](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaa140/6055681)
                                                                              
 This replication package contains three sets of codes. One for the principal analysis that draws on the data provided by Statistics Netherlands (STATNL), one for the LISS analysis, and one for the analysis that draws on CPS data.  
 
