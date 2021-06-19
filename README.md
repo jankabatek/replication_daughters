@@ -25,9 +25,7 @@ To execute the code with proprietary STATNL data, make sure that you have access
     HOOGSTEOPLTAB                              
     KINDOUDERTAB (x)                           
 
-The datasets marked with (x) are essential. The other datasets add valuable information, however the code can be adjusted to run without them.           
-
-Inquiries regarding the STATNL data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl)
+The datasets marked with (x) are essential. The other datasets add valuable information, however the code can be adjusted to run without them. Inquiries regarding the STATNL data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl)
 
 The runtime of the full STATNL analysis in the STATNL RA environment is **approximately two weeks**. Plan accordingly.          
 The runtime of the synthetic STATNL analysis is **~45 minutes**.                  
