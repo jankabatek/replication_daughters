@@ -1,51 +1,51 @@
 ********************************************************************************
-*                GETCID - generates couple identi/iers         
+*                GETCID - generates couple identifiers         
 ********************************************************************************
-* GETCID 	generates plausibly unique couple identi/iers by combining parts o/  
-*			the spousal RIN numbers. CID is str12 variable by de/ault. 
-*			I/ gender + rin is included in `genrin', then the beginning o/
-*			CID matches the RIN o/ the male (or smaller RIN in same-sex couples)
+* GETCID 	generates plausibly unique couple identifiers by combining parts of  
+*			the spousal RIN numbers. CID is str12 variable by default. 
+*			If gender + rin is included in `genrin', then the beginning of
+*			CID matches the RIN of the male (or smaller RIN in same-sex couples)
 *
 * REQUIRES: string variable "rinpersoon"
 *			 
-* INPUT: 	varlist = variables that de/ine unique couple identi/iers 
-* 			OPTIONAL: 	- add "gbageslacht rinpersoon" as genrin to put man /irst
+* INPUT: 	varlist = variables that define unique couple identifiers 
+* 			OPTIONAL: 	- add "gbageslacht rinpersoon" as genrin to put man first
 *			 			- increase/decrease the strXX precision
-* OUTPUT: 	Generate = couples identi/ier, by de/ault CID
+* OUTPUT: 	Generate = couples identifier, by default CID
 *
-* /ORMAT:	GETCID  huishoudnr  datumaanvanghh, genrin(gbageslacht rinpersoon) replace
+* FORMAT:	GETCID  huishoudnr  datumaanvanghh, genrin(gbageslacht rinpersoon) replace
 *------------------j.kabatek@unimelb.edu.au, 08/2016, (c)----------------------*
 
 capture program drop GETCID
 
-program de/ine GETCID
+program define GETCID
 	syntax varlist(min=1), [Generate(name) precision(int 12) genrin(varlist) altrin(varname) replace] 
 	
-	i/ "`altrin'" == "" {
+	if "`altrin'" == "" {
 		local rin rinpersoon
 	}
 	else {
 		local rin `altrin'
 	}
 	
-	i/ "`generate'" == "" {
+	if "`generate'" == "" {
 		local genvar CID
 	}	
 	else {
 		local genvar `generate'
 	}	
 	
-	con/irm str var `rin'
-	i/ "`replace'" == "" con/irm new var `genvar'
+	confirm str var `rin'
+	if "`replace'" == "" confirm new var `genvar'
 	 
-	*sort the data by variables that de/ine unique couple identi/iers
+	*sort the data by variables that define unique couple identifiers
 	sort `varlist' `genrin'
 	 
 	local pr1 = ceil(`precision'/2)
-	local pr2 = /loor(`precision'/2)
+	local pr2 = floor(`precision'/2)
 	 	 	
-	i/ "`replace'" != "" drop `genvar'
-	i/ "`generate'" == "" {
+	if "`replace'" != "" drop `genvar'
+	if "`generate'" == "" {
 			by `varlist': gen CID = substr(rinpersoon[1],1,`pr1') + substr(rinpersoon[2],1,`pr2') 
 	}	
 	else {
