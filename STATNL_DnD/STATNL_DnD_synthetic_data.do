@@ -865,9 +865,19 @@ do "${DOFILES}/LOBS_DATAGEN.do"
 			global BG_VARS `BG_vars' 
 			local outreglist i.AGE_K_Y1 daughter1#i.AGE_K_Y1 i.TM_Y  ${BG_VARS} PREMAR iA* iD*
 
-			forvalues i = 1/6 {		
+			forvalues i = 1/5 {		
 				estimates use "${EST}/reg_${VERSION}_robu_`i'"
 				outreg2 using XLS/TABLE_B2_${VERSION}_robust,  keep(`outreglist' ) side dec(3) ///
+				noparen excel  ctitle("`i'")  addn( "_","Time $S_TIME, $S_DATE", "Data from $S_FN") /// 
+				stats(coef se) eform /// 
+				addtext(spells,`"`cnt'"', ll,`"`ll'"',Cohort FE, YES)
+			}
+
+			for num 1/2: cap gen empX = floor(0.7 + runiform())
+			for num 1/2: cap gen INCX = 60*(runiform())
+			forvalues i = 6/6 {		
+				estimates use "${EST}/reg_${VERSION}_robu_`i'"
+				outreg2 using XLS/TABLE_B2_${VERSION}_robust,  keep(`outreglist' emp* INC*) side dec(3) ///
 				noparen excel  ctitle("`i'")  addn( "_","Time $S_TIME, $S_DATE", "Data from $S_FN") /// 
 				stats(coef se) eform /// 
 				addtext(spells,`"`cnt'"', ll,`"`ll'"',Cohort FE, YES)

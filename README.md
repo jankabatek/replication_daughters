@@ -49,7 +49,7 @@ The code produces estimates for the following figures and tables:
      Table B1 (lines 494-714 and 756, STATNL_DnD.do, estimates saved in       
                TABLE_B1_${VERSION}_het.xml.)                                  
      Table B2 (lines 742-800, STATNL_DnD.do), estimates saved in              
-               rows 245-252 of TABLE_B1_${VERSION}_het.xml.)                  
+               TABLE_B2_${VERSION}_het.xml.)                  
                                                                               
 
 ---
