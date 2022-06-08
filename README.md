@@ -1,6 +1,10 @@
 # Replication code for [Kabátek & Ribar (2021)](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaa140/6055681)
-                                                                             
-This replication package contains three sets of codes. One for the principal analysis that draws on the data provided by Statistics Netherlands (STATNL), one for the LISS analysis, and one for the analysis that draws on CPS data.  
+    
+<img src="https://www.jankabatek.com/img/DnD.png" alt="drawing" width="600"/>      
+
+**This replication package contains three sets of codes:**
+
+One for the principal analysis that draws on the data provided by Statistics Netherlands (STATNL), one for the LISS analysis, and one for the analysis that draws on CPS data.  
 
 All codes were written and executed in STATA 15.0, OS Windows 10.            
 All supplementary packages are provided with the code and they are stored in the subfolder 'auxiliary_scripts'. There is no need to install them.         
@@ -10,6 +14,8 @@ To run the analyses, please execute the do-files stored in the respective folder
 The codes are commented and they contain additional information that should facilitate the replication efforts. Estimation results are stored in the designated subfolders '/XXX_DnD/results/XLS'.                                
                                                                               
 ---
+
+## 1. Administrative data analysis (STATNL)
 
 The STATNL analysis draws on proprietary data, which means that **the datasets are not supplied in the replication package**.                                 
 
@@ -54,6 +60,8 @@ The code produces estimates for the following figures and tables:
 
 ---
 
+## 2. Dutch survey data analysis (LISS)
+
  The LISS replication package contains three LISS data extracts (both in .dta and .csv formats, no downloads are necessary).                                
 
  The LISS data extracts can be also constructed from raw LISS data (see file LISS_DnD.do for instructions)                                        
@@ -76,6 +84,8 @@ The code produces estimates for the following figures and tables:
                                                                               
 
 ---
+
+## 3. US survey data analysis (CPS)
 
 The CPS replication package contains the CPS-MFS data (both in .dta and csv formats, no downloads are necessary.                                     
 
