@@ -1,4 +1,4 @@
-# Replication code for [Kabátek & Ribar (2021)](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaa140/6055681)
+# Replication code for Daughters and Divorce, [Kabátek & Ribar (2021)](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaa140/6055681)
     
 <img src="https://www.jankabatek.com/img/DnD.png" alt="drawing" width="600"/>      
 
